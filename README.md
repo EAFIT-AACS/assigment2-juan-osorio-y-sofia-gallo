@@ -20,9 +20,9 @@
 
 2. **Ensure the following files are in the same directory:**
    - `Main.java`
-   - `StringGenerator.java`
-   - `PDA.java`
-   - `DerivationTree.java`
+   - `ALGORITHM_1_LFCO_2025_JJOA_SG_EFCR.java`
+   - `ALGORITHM_2_LFCO_2025_JJOA_SG_EFCR.java`
+   - `ALGORITHM_3_LFCO_2025_JJOA_SG_EFCR.java`
 
 3. **Compile the Java files:**
    Open a terminal in the directory containing the files and run:
