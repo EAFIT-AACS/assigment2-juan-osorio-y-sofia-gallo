@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public class StringGenerator {
+public class ALGORITHM_1_LFCO_2025_JJOA_SG_EFCR {
     private static final Random rand = new Random();
 
     public static String generateValidString() {
