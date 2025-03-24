@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class DerivationTree {
+public class ALGORITHM_3_LFCO_2025_JJOA_SG_EFCR {
     public static List<String> generateLeftmostDerivation(String input) {
         List<String> steps = new ArrayList<>();
         steps.add("S");
