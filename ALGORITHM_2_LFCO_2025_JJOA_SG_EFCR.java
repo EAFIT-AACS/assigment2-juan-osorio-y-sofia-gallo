@@ -2,7 +2,7 @@ import java.util.List;
 import java.util.Stack;
 import java.util.ArrayList;
 
-public class PDA {
+public class ALGORITHM_2_LFCO_2025_JJOA_SG_EFCR {
     private static final char Z0 = 'Z';
 
     public static boolean accepts(String input, List<String> steps) {
