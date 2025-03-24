@@ -4,7 +4,7 @@
 ## Group Members
 - Juan Jose Osorio
 - Sofia Gallo
-- Emmanuel Cortes
+- Emmanuel Cortes (Estudiante de la clase del lunes)
 
 ## Environment
 - **Operating System:** Windows 10
@@ -38,16 +38,34 @@
 5. **Expected Output:**
    The program will generate valid and invalid strings, verify them using a PDA, and construct derivation trees for valid strings. The output will be displayed in the terminal.
 
-## Detailed Description
+## Program Operation
 
-### Algorithm 1: String Generation
-- **StringGenerator.java:** Contains methods to generate valid and invalid strings based on the grammar `S → aSb | ε`.
+This program implements three interrelated algorithms for the analysis of the context-free grammar S → aSb | ε, which generates the language {aⁿbⁿ | n ≥ 0}.
 
-### Algorithm 2: Pushdown Automaton (PDA)
-- **PDA.java:** Implements a PDA to verify if the generated strings are accepted by the grammar.
+### Execution Process
 
-### Algorithm 3: Derivation Tree Construction
-- **DerivationTree.java:** Generates the leftmost derivation and constructs the derivation tree for valid strings.
+1. **String Generation (Algorithm 1)**:
+   - The program generates 5 valid strings using the pattern a^n b^n, where each string has the same number of 'a' characters followed by the same number of 'b' characters.
+   - It also generates 5 invalid strings using three different methods: different number of 'a's and 'b's, reversed order (b^n a^n), or interleaved characters (ab)^n.
 
-### Main Program
-- **Main.java:** Integrates the three algorithms, generates strings, verifies them using the PDA, and constructs derivation trees for valid strings.
+2. **Verification with Push-Down Automaton (Algorithm 2)**:
+   - Each generated string is processed with a push-down automaton (PDA) that:
+     - Reads 'a' characters and pushes them onto the stack
+     - Reads 'b' characters and pops an 'a' character for each 'b'
+     - Accepts the string if at the end the stack contains only the initial symbol Z₀
+   - The program shows each step of the automaton's execution, including the state, remaining input, and stack contents.
+
+3. **Construction of Derivation Trees (Algorithm 3)**:
+   - For valid strings, the program:
+     - Generates the leftmost derivation, showing each step from the initial symbol S to the final string
+     - Constructs and visualizes the derivation tree using ASCII characters to represent the hierarchical structure
+
+### Main Features
+
+- **Step-by-step analysis**: Shows in detail each transition and state change
+- **Visual representation**: Uses ASCII characters to draw derivation trees
+- **Complete validation**: Verifies both valid and invalid strings
+- **Integration of concepts**: Demonstrates the equivalence between context-free grammars and push-down automata
+- **Handling of special cases**: Correctly processes the empty string (ε)
+
+The program provides a practical demonstration of the theoretical concepts of formal languages, specifically the relationship between context-free grammars and push-down automata for language recognition.
