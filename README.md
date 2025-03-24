@@ -27,7 +27,7 @@
 3. **Compile the Java files:**
    Open a terminal in the directory containing the files and run:
    ```sh
-   javac Main.java StringGenerator.java PDA.java DerivationTree.java
+   javac Main.java ALGORITHM_1_LFCO_2025_JJOA_SG_EFCR.java ALGORITHM_2_LFCO_2025_JJOA_SG_EFCR.java ALGORITHM_3_LFCO_2025_JJOA_SG_EFCR.java
    ```
 
 4. **Run the Main class:**
